@@ -1,0 +1,138 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(n.jpg);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
+.text{
+    font-size: 5rem;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgb(0, 0, 0),
+    0 0 50px rgb(0, 0, 0),
+    0 0 50px #000000,
+    0 0 10px #000000;
+ 
+}
+.flex{
+    margin-top: 7%;
+}
+.container .container1 .container2 .container3{
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+
+  
+}
+.card {
+    position: relative;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  /* margin-left: 63vw; */
+ 
+  transition: all 1s ease-in;
+
+}
+.card1{
+    /* margin-left: 27vw; */
+    position: relative;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in;
+    
+}
+.card2{
+    /* margin-left: -9vw; */
+    position: relative;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in;
+}
+.card3{
+    /* margin-left: -45vw; */
+    position: relative;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in;
+}
+
+.front-flip, .back-flip, .front-flip1, .back-flip1, .front-flip2, .back-flip2, .front-flip3, .back-flip3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.back-flip,.back-flip1, .back-flip2, .back-flip3{
+
+   transform: rotateY(180deg);
+}
+img{
+    height: 17rem;
+    margin: 1%;
+    cursor: pointer;
+}
+
+.btn{
+    box-shadow: 0 0 5px rgb(31, 81, 255),
+    0 0 25px rgb(31, 81, 255),
+    0 0 50px #03e9f4,
+    0 0 10px #03e9f4;
+    font-size: 3rem;
+    position: fixed;
+    margin-top: 21rem;
+    margin-left: 38%;
+    padding: 20px;
+    background-color: rgba(6, 64, 253, 0.945);
+    color: white;
+    cursor: pointer;
+    width: 20%;
+    text-align: center;
+  }
+.flip{
+    transform: rotateY(180deg);
+}
+.flip1{
+    transform: rotateY(3600deg);
+}
+
+.card-1{
+    margin-left: 63vw;
+}
+.card-2{
+    margin-left: 27vw;
+}
+.card-3{
+    margin-left: -9vw;
+}
+.card-4{
+    margin-left: -45vw;
+}
+.vanish{
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgb(0, 0, 0),
+    0 0 25px rgb(0, 0, 0),
+    0 0 50px #000000,
+    0 0 10px #000000e8;
+    visibility: hidden;
+    transition: all 0s ease-in;
+}
+.glow{
+    box-shadow: 0 0 5px rgb(31, 81, 255),
+    0 0 25px rgb(31, 81, 255),
+    0 0 50px #03e9f4,
+    0 0 10px #03e9f4;
+}
+
